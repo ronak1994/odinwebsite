@@ -37,21 +37,22 @@
   <meta name="theme-color" content="#ffffff" />
   <link rel="icon" type="image/x-icon" href="<?php echo base_url(). 'img/content/favicon.ico'  ?>" />
   <style>
-    ul {
+    .desk ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
     }
 
-    li {
+    .desk  li {
       float: left;
     }
 
-    li a {
+    .desk li a {
       display: block;
-      padding: 8px;
-      background-color: #dddddd;
+      padding: 10px 20px; 
+      color: #fff !important;
+      background-color: transparent;
     }
 
     .mob {
@@ -68,7 +69,11 @@
     .dropdown-content {
       display: none;
       position: fixed;
-     
+
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
     }
     
     .dropdown-content a {
@@ -81,6 +86,8 @@
    
     .dropdown:hover .dropdown-content {
       display: block;
+      width: -webkit-fill-available;
+
      
     }
     
@@ -251,7 +258,7 @@
     <header style="    padding-top:30px;" class="header header_menu-right header_fixed container-fluid js-header-sticky"
       id="page-header" data-arts-theme-text="<?php if($this->uri->segment(1)=="" || ($this->uri->segment(1)==" home" &&
       $this->uri->segment(2)=="") || $this->uri->segment(1)=="works"){echo "light";}else{echo "dark";}?>"
-      data-arts-header-sticky-theme="bg-white" data-arts-header-logo="
+       data-arts-header-logo="
       <?php if($this->uri->segment(1)=="" || ($this->uri->segment(1)=="home" && $this->uri->segment(2)=="") || $this->uri->segment(1)=="works"){echo "secondary";}else{echo "primary";}?>"
       data-arts-header-sticky-logo="primary" data-arts-header-overlay-theme="light"
       data-arts-header-overlay-background="#ffffff">
@@ -280,7 +287,7 @@
               </li>
               <li class="dropdown"><a href="<?php echo(base_url() . 'services') ?>"class="dropbtn">Services</a>
                 <div class="dropdown-content">
-                  <a href="<?php echo(base_url() . 'Services/Web_dev') ?>">Web development</a>
+                  <a href="<?php echo(base_url() . 'Services/Web_Dev') ?>">Web development</a>
                   <a href="<?php echo(base_url() . 'Services/UI_UX') ?>">UI/UX</a>
                   <a href="<?php echo(base_url() . 'Services/Graphic_Design') ?>">Graphic Design</a>
                   <a href="<?php echo(base_url() . 'Services/Mobile_App') ?>">Mobile App Dev</a>

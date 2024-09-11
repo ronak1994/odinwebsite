@@ -37,15 +37,16 @@
   <meta name="theme-color" content="#ffffff" />
   <link rel="icon" type="image/x-icon" href="<?php echo base_url(). 'img/content/favicon.ico'  ?>" />
   <style>
-    .desk ul {
+   .desk ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
     }
 
-    .desk  li {
+    .desk li {
       float: left;
+      padding: 0 20px;
     }
 
     .desk li a {
@@ -70,7 +71,7 @@
       display: none;
       position: fixed;
 
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(55, 54, 54, 0.8);
       backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
@@ -86,9 +87,17 @@ border: 1px solid rgba(255, 255, 255, 0.3);
    
     .dropdown:hover .dropdown-content {
       display: block;
-      width: -webkit-fill-available;
-
-     
+   
+    }
+    .dropdown:hover .biggg {
+      display: block;
+    width: 70%;
+     margin-left: -20%;
+    }
+    .dropdown:hover .biggg1 {
+      display: block;
+    width: 60%;
+     margin-left: -30%;
     }
     
   
@@ -101,6 +110,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         display: none;
       }
     }
+
+    
+      
+
   </style>
 </head>
 
@@ -258,7 +271,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     <header style="    padding-top:30px;" class="header header_menu-right header_fixed container-fluid js-header-sticky"
       id="page-header" data-arts-theme-text="<?php if($this->uri->segment(1)=="" || ($this->uri->segment(1)==" home" &&
       $this->uri->segment(2)=="") || $this->uri->segment(1)=="works"){echo "light";}else{echo "dark";}?>"
-       data-arts-header-logo="
+   data-arts-header-logo="
       <?php if($this->uri->segment(1)=="" || ($this->uri->segment(1)=="home" && $this->uri->segment(2)=="") || $this->uri->segment(1)=="works"){echo "secondary";}else{echo "primary";}?>"
       data-arts-header-sticky-logo="primary" data-arts-header-overlay-theme="light"
       data-arts-header-overlay-background="#ffffff">
@@ -276,8 +289,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
               </div>
             </a>
           </div>
-          <div class="col-auto header__col  desk">
-            <ul>
+          <div class="col-auto header__col  desk" data-arts-os-animation="data-arts-os-animation">
+            <ul >
               <li class="dropdown"><a href="<?php echo(base_url() . 'aboutus') ?>"class="dropbtn">About</a>
                 <div class="dropdown-content">
                   <a href="<?php echo(base_url() . 'About/Company') ?>">Company</a>
@@ -286,15 +299,23 @@ border: 1px solid rgba(255, 255, 255, 0.3);
                 </div>
               </li>
               <li class="dropdown"><a href="<?php echo(base_url() . 'services') ?>"class="dropbtn">Services</a>
-                <div class="dropdown-content">
-                  <a href="<?php echo(base_url() . 'Services/Web_Dev') ?>">Web development</a>
-                  <a href="<?php echo(base_url() . 'Services/UI_UX') ?>">UI/UX</a>
-                  <a href="<?php echo(base_url() . 'Services/Graphic_Design') ?>">Graphic Design</a>
-                  <a href="<?php echo(base_url() . 'Services/Mobile_App') ?>">Mobile App Dev</a>
-                  <a href="<?php echo(base_url() . 'Services/Product_Development') ?>">Product Development</a>
-                  <a href="<?php echo(base_url() . 'Services/Social_Media') ?>">Social Media Management</a>
-                  <a href="<?php echo(base_url() . 'Services/Performance_Marketing') ?>">Performance Marketing</a>
-                  <a href="<?php echo(base_url() . 'Services/Website_Maintenance') ?>">Website Maintenance/ Updates</a>
+                <div class="dropdown-content biggg">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <a href="<?php echo(base_url() . 'Services/Web_Dev') ?>">Web development</a>
+                      <a href="<?php echo(base_url() . 'Services/UI_UX') ?>">UI/UX</a>
+                      <a href="<?php echo(base_url() . 'Services/Graphic_Design') ?>">Graphic Design</a>
+                      <a href="<?php echo(base_url() . 'Services/Mobile_App') ?>">Mobile App Dev</a>
+                    </div>
+                    <div class="col-md-6">
+                      <a href="<?php echo(base_url() . 'Services/Product_Development') ?>">Product Development</a>
+                      <a href="<?php echo(base_url() . 'Services/Social_Media') ?>">Social Media Management</a>
+                      <a href="<?php echo(base_url() . 'Services/Performance_Marketing') ?>">Performance Marketing</a>
+                      <a href="<?php echo(base_url() . 'Services/Website_Maintenance') ?>">Website Maintenance/ Updates</a>
+                    </div>
+                  </div>
+                 
+                 
                 </div>
               </li>
               <li class="dropdown"><A href=""class="dropbtn">Products</A>
@@ -307,14 +328,22 @@ border: 1px solid rgba(255, 255, 255, 0.3);
                 </div>
               </li>
               <li class="dropdown"><a href=""class="dropbtn">Industries</a>
-                <div class="dropdown-content">
-                  <a href="<?php echo(base_url() . 'Industries/Retail') ?>">Retail</a>
-                  <a href="<?php echo(base_url() . 'Industries/Jewellery') ?>">Jewellery</a>
-                  <a href="<?php echo(base_url() . 'Industries/Healthcare') ?>">Healthcare</a>
-                  <a href="<?php echo(base_url() . 'Industries/Manufacturing') ?>">Manufacturing</a>
-                  <a href="<?php echo(base_url() . 'Industries/Hospitality') ?>">Hospitality</a>
-                  <a href="<?php echo(base_url() . 'Industries/Education') ?>">Education</a>
-                  <a href="<?php echo(base_url() . 'Industries/Real_Estate') ?>">Real Estate</a>
+                <div class="dropdown-content biggg1">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <a href="<?php echo(base_url() . 'Industries/Retail') ?>">Retail</a>
+                      <a href="<?php echo(base_url() . 'Industries/Jewellery') ?>">Jewellery</a>
+                      <a href="<?php echo(base_url() . 'Industries/Healthcare') ?>">Healthcare</a>
+                      <a href="<?php echo(base_url() . 'Industries/Manufacturing') ?>">Manufacturing</a>
+                    </div>
+                    <div class="col-md-6">
+                      <a href="<?php echo(base_url() . 'Industries/Hospitality') ?>">Hospitality</a>
+                      <a href="<?php echo(base_url() . 'Industries/Education') ?>">Education</a>
+                      <a href="<?php echo(base_url() . 'Industries/Real_Estate') ?>">Real Estate</a>
+                    </div>
+                  </div>
+                
+               
                  
                 </div>
               </li>
@@ -330,7 +359,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
             </ul>
           </div>
           <div class="col-auto header__col  desk">
-            <button type="button" class="btn " style="border: none;border-radius: 30px;padding: 7px 20px;">Contact Us</button>
+            <a class="button button_solid  mb-0-5" style="display:block;border: none;border-radius: 30px;padding: 10px 25px;background: #fff;color: #000;" data-hover="Contact Us" href="http://localhost/theodin/contactus"><span class="button__label-hover ">Contact Us</span></a>
+            
           </div>
           <!-- - logo -->
           <!-- burger icon -->

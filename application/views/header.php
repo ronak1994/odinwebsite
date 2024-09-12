@@ -268,7 +268,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     </div>
     <!-- - Cursor Follower-->
     <!-- PAGE HEADER -->
-    <header style="    padding-top:30px;" class="header header_menu-right header_fixed container-fluid js-header-sticky"
+    <header style="    padding-top:30px;" class="header header_menu-right container-fluid js-header-sticky"
       id="page-header" data-arts-theme-text="<?php if($this->uri->segment(1)=="" || ($this->uri->segment(1)==" home" &&
       $this->uri->segment(2)=="") || $this->uri->segment(1)=="works"){echo "light";}else{echo "dark";}?>"
    data-arts-header-logo="
@@ -301,13 +301,13 @@ border: 1px solid rgba(255, 255, 255, 0.3);
               <li class="dropdown"><a href="<?php echo(base_url() . 'services') ?>"class="dropbtn">Services</a>
                 <div class="dropdown-content biggg">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 pr-0">
                       <a href="<?php echo(base_url() . 'Services/Web_Dev') ?>">Web development</a>
                       <a href="<?php echo(base_url() . 'Services/UI_UX') ?>">UI/UX</a>
                       <a href="<?php echo(base_url() . 'Services/Graphic_Design') ?>">Graphic Design</a>
                       <a href="<?php echo(base_url() . 'Services/Mobile_App') ?>">Mobile App Dev</a>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 pl-0">
                       <a href="<?php echo(base_url() . 'Services/Product_Development') ?>">Product Development</a>
                       <a href="<?php echo(base_url() . 'Services/Social_Media') ?>">Social Media Management</a>
                       <a href="<?php echo(base_url() . 'Services/Performance_Marketing') ?>">Performance Marketing</a>
@@ -330,13 +330,13 @@ border: 1px solid rgba(255, 255, 255, 0.3);
               <li class="dropdown"><a href=""class="dropbtn">Industries</a>
                 <div class="dropdown-content biggg1">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 pr-0">
                       <a href="<?php echo(base_url() . 'Industries/Retail') ?>">Retail</a>
                       <a href="<?php echo(base_url() . 'Industries/Jewellery') ?>">Jewellery</a>
                       <a href="<?php echo(base_url() . 'Industries/Healthcare') ?>">Healthcare</a>
                       <a href="<?php echo(base_url() . 'Industries/Manufacturing') ?>">Manufacturing</a>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 pl-0">
                       <a href="<?php echo(base_url() . 'Industries/Hospitality') ?>">Hospitality</a>
                       <a href="<?php echo(base_url() . 'Industries/Education') ?>">Education</a>
                       <a href="<?php echo(base_url() . 'Industries/Real_Estate') ?>">Real Estate</a>
@@ -359,7 +359,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
             </ul>
           </div>
           <div class="col-auto header__col  desk">
-            <a class="button button_solid  mb-0-5" style="display:block;border: none;border-radius: 30px;padding: 10px 25px;background: #fff;color: #000;" data-hover="Contact Us" href="http://localhost/theodin/contactus"><span class="button__label-hover ">Contact Us</span></a>
+            <a class="button button_solid  mb-0-5" style="display:block;border: none;border-radius: 30px;padding: 10px 25px;background: #fff;color: #000;" data-hover="Contact Us" href="<?php echo(base_url() . 'contactus') ?>"><span class="button__label-hover ">Contact Us</span></a>
             
           </div>
           <!-- - logo -->

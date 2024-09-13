@@ -347,13 +347,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
                  
                 </div>
               </li>
-              <li class="dropdown"><a href=""class="dropbtn">Portfolio </a>
-                <div class="dropdown-content">
-                  <a href="<?php echo(base_url() . 'Portfolio/Client’s') ?>">Client’s Work</a>
-                  <a href="<?php echo(base_url() . 'Portfolio/Case_studies') ?>">Case Studies</a>
-                  
-                 
-                </div>
+              <li ><a href="<?php echo(base_url() . 'Portfolio') ?>"class="dropbtn">Portfolio </a>
+                
               </li>
        
             </ul>

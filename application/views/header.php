@@ -302,16 +302,16 @@ border: 1px solid rgba(255, 255, 255, 0.3);
                 <div class="dropdown-content biggg">
                   <div class="row">
                     <div class="col-md-6 pr-0">
-                      <a href="<?php echo(base_url() . 'Services/Web_Dev') ?>">Web development</a>
-                      <a href="<?php echo(base_url() . 'Services/UI_UX') ?>">UI/UX</a>
-                      <a href="<?php echo(base_url() . 'Services/Graphic_Design') ?>">Graphic Design</a>
-                      <a href="<?php echo(base_url() . 'Services/Mobile_App') ?>">Mobile App Dev</a>
+                      <a href="<?php echo(base_url() . 'Service/Web_Dev') ?>">Web development</a>
+                      <a href="<?php echo(base_url() . 'Service/UI_UX') ?>">UI/UX</a>
+                      <a href="<?php echo(base_url() . 'Service/Graphic_Design') ?>">Graphic Design</a>
+                      <a href="<?php echo(base_url() . 'Service/Mobile_App') ?>">Mobile App Dev</a>
                     </div>
                     <div class="col-md-6 pl-0">
-                      <a href="<?php echo(base_url() . 'Services/Product_Development') ?>">Product Development</a>
-                      <a href="<?php echo(base_url() . 'Services/Social_Media') ?>">Social Media Management</a>
-                      <a href="<?php echo(base_url() . 'Services/Performance_Marketing') ?>">Performance Marketing</a>
-                      <a href="<?php echo(base_url() . 'Services/Website_Maintenance') ?>">Website Maintenance/ Updates</a>
+                      <a href="<?php echo(base_url() . 'Service/Product_Development') ?>">Product Development</a>
+                      <a href="<?php echo(base_url() . 'Service/Social_Media') ?>">Social Media Management</a>
+                      <a href="<?php echo(base_url() . 'Service/Performance_Marketing') ?>">Performance Marketing</a>
+                      <a href="<?php echo(base_url() . 'Service/Website_Maintenance') ?>">Website Maintenance/ Updates</a>
                     </div>
                   </div>
                  

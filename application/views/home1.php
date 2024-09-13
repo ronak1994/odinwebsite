@@ -3,89 +3,92 @@
 <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
   rel="stylesheet">
 
-<style>
-  .header {
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 500;
-  }
+<style>.header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 500;
+}
 
+.maintext h1,
+.maintext .h1 {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 152px;
+  text-align: center;
+ 
+  margin: 10px;
+  width: 100%;
+}
+@media (max-width:740px){
   .maintext h1,
   .maintext .h1 {
-    font-family: "Figtree", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 152px;
+    
+    font-size: 32px;
     text-align: center;
    
     margin: 10px;
     width: 100%;
   }
+}
 
-  .maintext {
-    top: 20%;
-    left: 28%;
-    transform: translate(-22%, -20%);
-    position: absolute;
-  }
-  /* Set up basic styling for the container and h1 elements */
+.maintext {
+  top: 35%;
+  left: 28%;
+  transform: translate(-22%, -30%);
+  position: absolute;
+}
+/* Set up basic styling for the container and h1 elements */
 /* Set up basic styling for the container and images */
 .roted {
-  position: relative;
-  width: 100%;
-  height: 230px; /* Adjust this to fit the size of your images */
-  overflow: hidden;
-  text-align: center;
+position: relative;
+width: 100%;
+height: 230px; /* Adjust this to fit the size of your images */
+overflow: hidden;
+text-align: center;
 }
 
 .roted .h1 {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Center the image */
-  opacity: 0; /* Initially hide all images */
-  animation: rotateImages 20s infinite; /* Total duration for all rotations */
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); /* Center the image */
+opacity: 0; /* Initially hide all images */
+animation: rotateImages 20s infinite; /* Total duration for all rotations */
 }
 
 .roted .h1:nth-child(1) {
-  animation-delay: 0s;
+animation-delay: 0s;
 }
 
 .roted .h1:nth-child(2) {
-  animation-delay: 5s;
+animation-delay: 5s;
 }
 
 .roted .h1:nth-child(3) {
-  animation-delay: 10s;
+animation-delay: 10s;
 }
 
 .roted .h1:nth-child(4) {
-  animation-delay: 15s;
+animation-delay: 15s;
 }
 
 /* Animation definition */
 @keyframes rotateImages {
-  0%, 20% {
-    opacity: 1; /* Show the image */
-  }
-  25%, 100% {
-    opacity: 0; /* Hide the image */
-  }
+0%, 20% {
+  opacity: 1; /* Show the image */
 }
+25%, 100% {
+  opacity: 0; /* Hide the image */
+}
+}</style>
 
-</style>
 
-<script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
-<link href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-" rel="stylesheet">
 <!-- PAGE MAIN -->
 <div class="js-smooth-scroll bg-dark-1" id="page-wrapper" data-barba="container">
   <main class="page-wrapper__content">
@@ -97,7 +100,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       data-arts-theme-text="light" data-arts-os-animation>
       <div class="section-fullheight__inner section-fullheight__inner_mobile" style="position: relative;">
         <video id="videoId" muted="" autoplay="" loop="" preload="auto" width="100%" height="100%">
-          <source src="<?php echo base_url(); ?>/img/main1.mp4" type="video/mp4">
+          <source src="<?php echo base_url(); ?>/img/main3.mp4" type="video/mp4">
         </video>
         <div class="content maintext">
           <h1>Welcome to the</h1>
@@ -108,12 +111,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               <div class=" h1"><img src="<?php echo base_url(); ?>/img/2.png" alt=""></div>
               <div class=" h1"><img src="<?php echo base_url(); ?>/img/3.png" alt=""></div>
               <div class=" h1"><img src="<?php echo base_url(); ?>/img/4.png" alt=""></div>
-              
             </div>
-
-
-
-            
           </div>
         </div>
       </div>
@@ -200,19 +198,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 </div>
 <!-- - PhotoSwipe -->
 <!-- List Hover Shaders -->
-<script>
 
-
-
-
-  var splide = new Splide('.sp1', {
-    perPage: 1,
-    rewind: true,
-  });
-
-  splide.mount();
-
-</script>
 
 
 <script id="list-hover-vs" type="x-shader/x-vertex">

@@ -269,7 +269,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     <!-- - Cursor Follower-->
     <!-- PAGE HEADER -->
     <header style="    padding-top:30px;" class="header header_menu-right container-fluid js-header-sticky"
-      id="page-header" data-arts-theme-text="<?php if($this->uri->segment(1)=="" || ($this->uri->segment(1)==" home" &&
+      id="page-header" data-arts-theme-text="<?php if($this->uri->segment(1)=="" || ($this->uri->segment(1)=="home" &&
       $this->uri->segment(2)=="") || $this->uri->segment(1)=="works"){echo "light";}else{echo "dark";}?>"
    data-arts-header-logo="
       <?php if($this->uri->segment(1)=="" || ($this->uri->segment(1)=="home" && $this->uri->segment(2)=="") || $this->uri->segment(1)=="works"){echo "secondary";}else{echo "primary";}?>"

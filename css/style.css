@@ -5,8 +5,10 @@ html, body{
     Width: 100%;
     max-width: 200px;
 }
+
+
+
 .header__controls{
-    
 
 /* From https://css.glass */
 /* background: rgba(255, 255, 255, 0.2); */

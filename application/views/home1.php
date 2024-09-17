@@ -3,90 +3,115 @@
 <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
   rel="stylesheet">
 
-<style>.header {
-  background-color: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 500;
-}
+<style>
+  .header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+  }
 
-.maintext h1,
-.maintext .h1 {
-  font-family: "Figtree", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 152px;
-  text-align: center;
- 
-  margin: 10px;
-  width: 100%;
-}
-@media (max-width:740px){
   .maintext h1,
   .maintext .h1 {
-    
-    font-size: 32px;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 152px;
     text-align: center;
-   
+
     margin: 10px;
     width: 100%;
   }
-}
 
-.maintext {
-  top: 35%;
-  left: 28%;
-  transform: translate(-22%, -30%);
-  position: absolute;
-}
-/* Set up basic styling for the container and h1 elements */
-/* Set up basic styling for the container and images */
-.roted {
-position: relative;
-width: 100%;
-height: 230px; /* Adjust this to fit the size of your images */
-overflow: hidden;
-text-align: center;
-}
 
-.roted .h1 {
-margin: 0;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%); /* Center the image */
-opacity: 0; /* Initially hide all images */
-animation: rotateImages 20s infinite; /* Total duration for all rotations */
-}
+  .maintext {
+    top: 35%;
+    left: 28%;
+    transform: translate(-22%, -30%);
+    position: absolute;
+  }
 
-.roted .h1:nth-child(1) {
-animation-delay: 0s;
-}
+  /* Set up basic styling for the container and h1 elements */
+  /* Set up basic styling for the container and images */
+  .roted {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    /* Adjust this to fit the size of your images */
+    overflow: hidden;
+    text-align: center;
+  }
 
-.roted .h1:nth-child(2) {
-animation-delay: 5s;
-}
+  .roted .h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center the image */
+    opacity: 0;
+    /* Initially hide all images */
+    animation: rotateImages 20s infinite;
+    /* Total duration for all rotations */
+  }
 
-.roted .h1:nth-child(3) {
-animation-delay: 10s;
-}
+  .roted .h1:nth-child(1) {
+    animation-delay: 0s;
+  }
 
-.roted .h1:nth-child(4) {
-animation-delay: 15s;
-}
+  .roted .h1:nth-child(2) {
+    animation-delay: 5s;
+  }
 
-/* Animation definition */
-@keyframes rotateImages {
-0%, 20% {
-  opacity: 1; /* Show the image */
-}
-25%, 100% {
-  opacity: 0; /* Hide the image */
-}
-}</style>
+  .roted .h1:nth-child(3) {
+    animation-delay: 10s;
+  }
+
+  .roted .h1:nth-child(4) {
+    animation-delay: 15s;
+  }
+
+  /* Animation definition */
+  @keyframes rotateImages {
+
+    0%,
+    20% {
+      opacity: 1;
+      /* Show the image */
+    }
+
+    25%,
+    100% {
+      opacity: 0;
+      /* Hide the image */
+    }
+  }
+
+  @media (max-width:740px) {
+
+    .maintext h1,
+    .maintext .h1 {
+
+      font-size: 42px;
+      text-align: center;
+
+      margin: 10px;
+      width: 100%;
+    }
+
+    .roted {
+      position: relative;
+      width: 100%;
+      height: 130px;
+      /* Adjust this to fit the size of your images */
+      overflow: hidden;
+      text-align: center;
+    }
+  }
+</style>
 
 
 <!-- PAGE MAIN -->
@@ -99,12 +124,28 @@ animation-delay: 15s;
     <section class="section section-fullheight section-projects section-projects-slider bg-dark-1 overflow"
       data-arts-theme-text="light" data-arts-os-animation>
       <div class="section-fullheight__inner section-fullheight__inner_mobile" style="position: relative;">
-        <video id="videoId" muted="" autoplay="" loop="" preload="auto" width="100%" height="100%">
+        <video class="desk" id="videoId" muted="" autoplay="" loop="" preload="auto" width="100%" height="100%">
           <source src="<?php echo base_url(); ?>/img/main3.mp4" type="video/mp4">
         </video>
-        <div class="content maintext">
+        <video class="mob" id="videoId" muted="" autoplay="" loop="" preload="auto" width="100%" height="100%">
+          <source src="<?php echo base_url(); ?>/img/mob.mp4" type="video/mp4">
+        </video>
+        <div class="content maintext desk">
           <h1>Welcome to the</h1>
           <h1>next generation of</h1>
+          <div class="sll">
+            <div class="roted">
+              <div class=" h1"><img src="<?php echo base_url(); ?>/img/1.png" alt=""></div>
+              <div class=" h1"><img src="<?php echo base_url(); ?>/img/2.png" alt=""></div>
+              <div class=" h1"><img src="<?php echo base_url(); ?>/img/3.png" alt=""></div>
+              <div class=" h1"><img src="<?php echo base_url(); ?>/img/4.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="content maintext mob">
+          <h1>Welcome to</h1>
+          <h1>the next </h1>
+          <h1>generation of</h1>
           <div class="sll">
             <div class="roted">
               <div class=" h1"><img src="<?php echo base_url(); ?>/img/1.png" alt=""></div>
@@ -202,7 +243,7 @@ animation-delay: 15s;
 
 
 <script id="list-hover-vs" type="x-shader/x-vertex">
-      uniform vec2 uOffset;
+  uniform vec2 uOffset;
       
       varying vec2 vUv;
       
@@ -221,7 +262,7 @@ animation-delay: 15s;
       }
     </script>
 <script id="list-hover-fs" type="x-shader/x-fragment">
-      uniform sampler2D uTexture;
+  uniform sampler2D uTexture;
       uniform float uAlpha;
       uniform float uScale;
       
@@ -241,14 +282,14 @@ animation-delay: 15s;
 <!-- - List Hover Shaders -->
 <!-- Slider Textures Shaders -->
 <script id="slider-textures-vs" type="x-shader/x-vertex">
-      varying vec2 vUv;
+  varying vec2 vUv;
       void main() {
         vUv = uv;
         gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
       }
     </script>
 <script id="slider-textures-horizontal-fs" type="x-shader/x-fragment">
-      varying vec2 vUv;
+  varying vec2 vUv;
       
       uniform sampler2D texture;
       uniform sampler2D texture2;
@@ -276,7 +317,7 @@ animation-delay: 15s;
       }
     </script>
 <script id="slider-textures-vertical-fs" type="x-shader/x-fragment">
-      varying vec2 vUv;
+  varying vec2 vUv;
       
       uniform sampler2D texture;
       uniform sampler2D texture2;

@@ -13,6 +13,7 @@
     href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap" />
   <!-- Template Vendor's Stylesheet -->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(). 'css/vendor.css'  ?>" />
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(). 'css/cuscss.css'  ?>" />
   <!-- Template Main Stylesheet -->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(). 'css/main.css'  ?>" />
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(). 'css/style.css'  ?>" />
@@ -37,7 +38,7 @@
   <meta name="theme-color" content="#ffffff" />
   <link rel="icon" type="image/x-icon" href="<?php echo base_url(). 'img/content/favicon.ico'  ?>" />
   <style>
-   .desk ul {
+    .desk ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -51,7 +52,7 @@
 
     .desk li a {
       display: block;
-      padding: 10px 20px; 
+      padding: 10px 20px;
       color: #fff !important;
       background-color: transparent;
     }
@@ -60,47 +61,49 @@
 
       display: none;
     }
-  
-    
+
+
     .dropdown {
       position: relative;
       display: inline-block;
     }
-    
+
     .dropdown-content {
       display: none;
       position: fixed;
 
       background: rgba(55, 54, 54, 0.8);
       backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
     }
-    
+
     .dropdown-content a {
       color: black;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
     }
-    
-   
+
+
     .dropdown:hover .dropdown-content {
       display: block;
-   
+
     }
+
     .dropdown:hover .biggg {
       display: block;
-    width: 70%;
-     margin-left: -20%;
+      width: 70%;
+      margin-left: -20%;
     }
+
     .dropdown:hover .biggg1 {
       display: block;
-    width: 60%;
-     margin-left: -30%;
+      width: 60%;
+      margin-left: -30%;
     }
-    
-  
+
+
     @media (max-width: 768px) {
       .mob {
         display: block;
@@ -110,10 +113,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         display: none;
       }
     }
-
-    
-      
-
   </style>
 </head>
 
@@ -269,9 +268,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     <!-- - Cursor Follower-->
     <!-- PAGE HEADER -->
     <header style="    padding-top:30px;" class="header header_menu-right container-fluid js-header-sticky"
-      id="page-header" data-arts-theme-text="<?php if($this->uri->segment(1)=="" || ($this->uri->segment(1)=="home" &&
+      id="page-header" data-arts-theme-text="<?php if($this->uri->segment(1)=="" || ($this->uri->segment(1)==" home" &&
       $this->uri->segment(2)=="") || $this->uri->segment(1)=="works"){echo "light";}else{echo "dark";}?>"
-   data-arts-header-logo="
+      data-arts-header-logo="
       <?php if($this->uri->segment(1)=="" || ($this->uri->segment(1)=="home" && $this->uri->segment(2)=="") || $this->uri->segment(1)=="works"){echo "secondary";}else{echo "primary";}?>"
       data-arts-header-sticky-logo="primary" data-arts-header-overlay-theme="light"
       data-arts-header-overlay-background="#ffffff">
@@ -281,81 +280,84 @@ border: 1px solid rgba(255, 255, 255, 0.3);
           <!-- logo -->
           <div class="col-auto header__col header__col-left"><a class="logo" href="<?php echo base_url(); ?> ">
               <div class="logo__wrapper-img">
-                <!-- primary logo version (for light backgrounds)--><img class="logo__img-primary header-logo"
-                  src="<?php echo base_url(). 'img/logo.png'  ?>" alt="The Odin" height="200" />
-                <!-- secondary logo version (for dark backgrounds)--><img
-                  class="logo__img-secondary header-logo-secondary"
+                <img class="logo__img-primary header-logo" src="<?php echo base_url(). 'img/logo.png'  ?>"
+                  alt="The Odin" height="200" />
+                <img class="logo__img-secondary header-logo-secondary"
                   src="<?php echo base_url(). 'img/general/logo_white.png'  ?>" alt="The Odin" height="20" />
               </div>
             </a>
           </div>
           <div class="col-auto header__col  desk" data-arts-os-animation="data-arts-os-animation">
             <ul >
-              <li class="dropdown"><a href="<?php echo(base_url() . 'aboutus') ?>"class="dropbtn">About</a>
-                <div class="dropdown-content">
-                  <a href="<?php echo(base_url() . 'About/Company') ?>">Company</a>
-                  <a href="<?php echo(base_url() . 'About/Story') ?>">Story</a>
-                  <a href="<?php echo(base_url() . 'About/Careers') ?>">Careers</a>
+              <li class="dropdown"><a href="<?php echo(base_url() . 'aboutus') ?>" class="dropbtn">About</a>
+                
+                <div class="dropdown-content ">
+                  <a href="<?php echo(base_url() . '') ?>">Company</a>
+                  <a href="<?php echo(base_url() . '') ?>">Story</a>
+                  <a href="<?php echo(base_url() . '') ?>">Careers</a>
                 </div>
               </li>
-              <li class="dropdown"><a href="<?php echo(base_url() . 'services') ?>"class="dropbtn">Services</a>
-                <div class="dropdown-content biggg">
+              <li class="dropdown"><a href="<?php echo(base_url() . 'services') ?>" class="dropbtn">Services</a>
+                <div class="dropdown-content biggg ">
                   <div class="row">
                     <div class="col-md-6 pr-0">
-                      <a href="<?php echo(base_url() . 'Service/Web_Dev') ?>">Web development</a>
-                      <a href="<?php echo(base_url() . 'Service/UI_UX') ?>">UI/UX</a>
-                      <a href="<?php echo(base_url() . 'Service/Graphic_Design') ?>">Graphic Design</a>
-                      <a href="<?php echo(base_url() . 'Service/Mobile_App') ?>">Mobile App Dev</a>
+                      <a href="<?php echo(base_url() . '') ?>">Web development</a>
+                      <a href="<?php echo(base_url() . '') ?>">UI/UX</a>
+                      <a href="<?php echo(base_url() . '') ?>">Graphic Design</a>
+                      <a href="<?php echo(base_url() . '') ?>">Mobile App Dev</a>
                     </div>
                     <div class="col-md-6 pl-0">
-                      <a href="<?php echo(base_url() . 'Service/Product_Development') ?>">Product Development</a>
-                      <a href="<?php echo(base_url() . 'Service/Social_Media') ?>">Social Media Management</a>
-                      <a href="<?php echo(base_url() . 'Service/Performance_Marketing') ?>">Performance Marketing</a>
-                      <a href="<?php echo(base_url() . 'Service/Website_Maintenance') ?>">Website Maintenance/ Updates</a>
+                      <a href="<?php echo(base_url() . '') ?>">Product Development</a>
+                      <a href="<?php echo(base_url() . '') ?>">Social Media Management</a>
+                      <a href="<?php echo(base_url() . '') ?>">Performance Marketing</a>
+                      <a href="<?php echo(base_url() . '') ?>">Website Maintenance/
+                        Updates</a>
                     </div>
                   </div>
-                 
-                 
                 </div>
               </li>
-              <li class="dropdown"><A href=""class="dropbtn">Products</A>
-                <div class="dropdown-content">
-                  <a href="<?php echo(base_url() . 'Products/Aestheics_Ai') ?>">Aestheics AI</a>
-                  <a href="<?php echo(base_url() . 'Products/Prow_Plus') ?>">Prow Plus</a>
-                  <a href="<?php echo(base_url() . 'Products/Ace_Spark') ?>">Ace Spark</a>
-                  <a href="<?php echo(base_url() . 'Products/Chargesol') ?>">Chargesol</a>
-                  
+              <li class="dropdown"><A href="" class="dropbtn">Products</A>
+                <div class="dropdown-content ">
+                  <a href="<?php echo(base_url() . '') ?>">Aestheics AI</a>
+                  <a href="<?php echo(base_url() . '') ?>">Prow Plus</a>
+                  <a href="<?php echo(base_url() . '') ?>">Ace Spark</a>
+                  <a href="<?php echo(base_url() . '') ?>">Chargesol</a>
+
                 </div>
               </li>
-              <li class="dropdown"><a href=""class="dropbtn">Industries</a>
+              <li class="dropdown"><a href="" class="dropbtn">Industries</a>
                 <div class="dropdown-content biggg1">
                   <div class="row">
                     <div class="col-md-6 pr-0">
-                      <a href="<?php echo(base_url() . 'Industries/Retail') ?>">Retail</a>
-                      <a href="<?php echo(base_url() . 'Industries/Jewellery') ?>">Jewellery</a>
-                      <a href="<?php echo(base_url() . 'Industries/Healthcare') ?>">Healthcare</a>
-                      <a href="<?php echo(base_url() . 'Industries/Manufacturing') ?>">Manufacturing</a>
+                      <a href="<?php echo(base_url() . '') ?>">Retail</a>
+                      <a href="<?php echo(base_url() . '') ?>">Jewellery</a>
+                      <a href="<?php echo(base_url() . '') ?>">Healthcare</a>
+                      <a href="<?php echo(base_url() . '') ?>">Manufacturing</a>
                     </div>
                     <div class="col-md-6 pl-0">
-                      <a href="<?php echo(base_url() . 'Industries/Hospitality') ?>">Hospitality</a>
-                      <a href="<?php echo(base_url() . 'Industries/Education') ?>">Education</a>
-                      <a href="<?php echo(base_url() . 'Industries/Real_Estate') ?>">Real Estate</a>
+                      <a href="<?php echo(base_url() . '') ?>">Hospitality</a>
+                      <a href="<?php echo(base_url() . '') ?>">Education</a>
+                      <a href="<?php echo(base_url() . '') ?>">Real Estate</a>
                     </div>
                   </div>
-                
-               
-                 
+
+
+
                 </div>
               </li>
-              <li ><a href="<?php echo(base_url() . 'Portfolio') ?>"class="dropbtn">Portfolio </a>
-                
+              <li><a href="<?php echo(base_url() . '') ?>" class="dropbtn">Portfolio </a>
+
               </li>
-       
+
             </ul>
           </div>
+     
           <div class="col-auto header__col  desk">
-            <a class="button button_solid  mb-0-5" style="display:block;border: none;border-radius: 30px;padding: 10px 25px;background: #fff;color: #000;" data-hover="Contact Us" href="<?php echo(base_url() . 'contactus') ?>"><span class="button__label-hover ">Contact Us</span></a>
-            
+            <a class="button button_solid  mb-0-5"
+              style="display:block;border: none;border-radius: 30px;padding: 10px 25px;background: #fff;color: #000;"
+              data-hover="Contact Us" href="<?php echo(base_url() . 'contactus') ?>"><span
+                class="button__label-hover ">Contact Us</span></a>
+
           </div>
           <!-- - logo -->
           <!-- burger icon -->
@@ -388,28 +390,35 @@ border: 1px solid rgba(255, 255, 255, 0.3);
       <!-- fullscreen overlay container -->
       <div class="header__wrapper-overlay-menu container-fluid container-fluid_paddings">
         <!-- fullscreen menu -->
-        <div class="header__wrapper-menu">
+        <div class="header__wrapper-menu" style="margin-top: 20%;">
           <ul class="menu-overlay js-menu-overlay">
-            <li class="menu-item-has-children"><a class="h2" href="<?php echo base_url();  ?>"
+            <li class="menu-item-has-children"><a class="h2" href="<?php echo base_url('aboutus');  ?>"
                 data-pjax-link="overlayMenu">
-                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Home</div>
+                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">About</div>
               </a>
             </li>
-            <li class="menu-item-has-children"><a class="h2" href="<?php echo(base_url() . 'works') ?>"
-                data-pjax-link="overlayMenu">
-                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Works
-                </div>
-              </a>
-            </li>
+            
             <li class="menu-item-has-children"><a class="h2" href="<?php echo(base_url() . 'services') ?>"
                 data-pjax-link="overlayMenu">
                 <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Services
                 </div>
               </a>
             </li>
-            <li class="menu-item-has-children"><a class="h2" href="<?php echo(base_url() . 'aboutus') ?>"
+            <li class="menu-item-has-children"><a class="h2" href="<?php echo(base_url() . '') ?>"
                 data-pjax-link="overlayMenu">
-                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">About us
+                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Products
+                </div>
+              </a>
+            </li>
+            <li class="menu-item-has-children"><a class="h2" href="<?php echo(base_url() . '') ?>"
+                data-pjax-link="overlayMenu">
+                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Industries
+                </div>
+              </a>
+            </li>
+            <li class="menu-item-has-children"><a class="h2" href="<?php echo(base_url() . '') ?>"
+                data-pjax-link="overlayMenu">
+                <div class="menu-overlay__item-wrapper split-text js-split-text" data-split-text-type="lines">Portfolio
                 </div>
               </a>
             </li>
